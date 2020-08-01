@@ -114,6 +114,7 @@
  */
 #define SERIAL_PORT_2 1
 
+
 /**
  * This setting determines the communication speed of the printer.
  *
@@ -124,6 +125,23 @@
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
 #define BAUDRATE 115200
+
+/**
+ * Select a secondary serial port on the board to use for communication with the host.
+ * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
+ */
+#define SERIAL_PORT_3 6
+
+/**
+ * This setting determines the communication speed of the printer.
+ *
+ * 250000 works in most cases, but you might try a lower speed if
+ * you commonly experience drop-outs during host printing.
+ * You may try up to 1000000 to speed up SD file transfer.
+ *
+ * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
+ */
+#define BAUDRATE 250000
 
 // Enable the Bluetooth serial interface on AT90USB devices
 //#define BLUETOOTH
@@ -515,7 +533,7 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -1162,7 +1180,7 @@
 #define FILAMENT_RUNOUT_SENSOR
 #if ENABLED(FILAMENT_RUNOUT_SENSOR)
   #define NUM_RUNOUT_SENSORS   1     // Number of sensors, up to one per extruder. Define a FIL_RUNOUT#_PIN for each.
-  #define FIL_RUNOUT_STATE     HIGH   // Pin state indicating that filament is NOT present.
+  #define FIL_RUNOUT_STATE     LOW   // Pin state indicating that filament is NOT present.
   #define FIL_RUNOUT_PULLUP          // Use internal pullup for filament runout pins.
   //#define FIL_RUNOUT_PULLDOWN      // Use internal pulldown for filament runout pins.
 
