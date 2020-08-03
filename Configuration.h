@@ -113,14 +113,14 @@
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
 
-#define SERIAL_PORT_2 3
+#define SERIAL_PORT_2 1
 
 /**
  * Select a secondary serial port on the board to use for communication with the host.
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
 
-#define SERIAL_PORT_3 6
+#define SERIAL_PORT_3 2
 
 /**
  * This setting determines the communication speed of the printer.
@@ -748,8 +748,8 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-// E steps example: steps per revolution s=200, microstepping m=16, effective gear diameter d=10.95: sm/(πd) = 93.02
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 130 }
+// E steps example: steps per revolution s=200, microstepping m=16, effective gear diameter d=10.95: sm/(πd) = 93.02 default value,the 136.88 are measuerd with the swiss micro
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 136.88 }
 
 /**
  * Default Max Feed Rate (mm/s)
