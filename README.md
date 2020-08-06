@@ -8,7 +8,7 @@ Configuration files for the Ender 5 Plus with the SKR mini E3 V2
 - existing BL Touch
 
 
-Display changed to TFT35 V3. 0 (Adapter Plate for Ender 5 Plus - Thingiverse Link)[https://www.thingiverse.com/thing:4541908] 
+Display changed to TFT35 V3. 0 [Adapter Plate for Ender 5 Plus - Thingiverse Link](https://www.thingiverse.com/thing:4541908) 
 
 [Link to Display](https://www.biqu.equipment/products/bigtreetech-tft35-v3-0-display-two-working-modes) 
 
