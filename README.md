@@ -25,14 +25,15 @@ Extruder and Hotend changed to Micro Swiss Direct Drive Extruder for Ender 5
 - do PID autotune for the heatingbed `M303 E-1 S60 C10` and replace the values at line 541 in Configuration.h 
 - after changing values do a `M502 M500` to overwrite the EEPROM with the values provided in the configs.
 - calibrate e steps, guide is here: [Extruder Calibration](https://all3dp.com/2/extruder-calibration-6-easy-steps-2/) 
+- use build target stm32f103rc_btt to be able to connect to the tft35.the 512k with and without usb seem not to work.
 
 # Current State:
-## Problems
-- TFT35 has no connection to the printer in Touch mode
 ## Working
 - Autoleveling vith BL TOUCH is working 
 - The printer does print
 - The prints look OK, some Finetuning has to be done (esteps, belt etc) 
 ### Overall usable for printing! 
+
+Now the finetuning starts... 
 
 # Work in progress! 
